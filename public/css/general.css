@@ -8,10 +8,40 @@
     --c_grisClaro: #ebebeb;
     --c_verde: #39b54a;
 
-    /** Font */
+    /** Font Family */
+    --f_general: 'Roboto';
+
+    /** Font Size */
     --fs_body: 12px;
     --fs_title: 24px;
-    --fs_prices: 18px;
+    --fs_price: 18px;
     --fs_discount: 16px;
     --fs_description: 16px;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body
+{
+    font-family: var(--f_general);
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+li
+{
+    list-style: none;
+}
+
+ol, ul
+{
+    padding:0px;
 }
