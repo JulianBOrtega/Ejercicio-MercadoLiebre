@@ -9,6 +9,7 @@
     background-color: var(--c_amarillo);
     font-size: var(--fs_body);
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .home__header img
@@ -24,9 +25,7 @@
 
 .home__header__menu
 {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    display:none;
     padding-bottom: 5px;
 }
 
@@ -43,6 +42,8 @@
     background-color: var(--c_celeste);
     width: 50px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
 }
 
@@ -63,7 +64,28 @@
 
 .home__main__products
 {
+    
+}
 
+.home__main__products__infobox
+{
+    /*text-align: left; No me gusta como queda left-leaning :C */ 
+    border: solid 1px var(--c_grisClaro);
+    padding: 15px;
+}
+
+.home__main__products__infobox i
+{
+    color: var(--c_verde);
+    padding: 10px;
+    border: solid 1px var(--c_verde);
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.home__main__products__infobox b
+{
+    display:none;
 }
 
 .home__main__products h3
@@ -72,22 +94,24 @@
     font-size: var(--fs_title);
 }
 
+.home__main__products__price
+{
+    font-size: var(--fs_price);   
+}
+
 .home__main__products__discount
 {
     font-size: var(--fs_discount);
-}
-
-.home__main__products__price
-{
-    font-size: var(--fs_price);
+    color: var(--c_verde);
+    margin-bottom: 5px;
 }
 
 .home__main__products article
 {
     background-color: white;
     border-radius: 5px;
-    margin: 20px 10px;
-    padding: 20px;
+    margin: 10px 5%;
+    /*padding: 20px;*/
 }
 
 /*!     F O O T E R     */
@@ -126,3 +150,58 @@
     font-size: var(--fs_body);
 }
 
+@media (min-width: 426px)  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Tablet & desktop*/
+{
+    .home__header
+    {
+        padding-bottom: 0;
+    }
+
+    .home__header__menu
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px 0px;
+    }
+
+    .home__header__menu ul
+    {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .home__header__menu ul li a
+    {
+        padding: 13px 10px;
+    }
+
+    #burger
+    {
+        display: none;
+    }
+
+    .home__main__products__infobox b
+    {
+        display: inline;
+    }
+
+    .home__main__products article
+    {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px) /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop */
+{
+    .home__header__menu ul li a
+    {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    .home__header__menu ul li a:hover
+    {
+        background-color: #dfbd16;
+    }
+}
