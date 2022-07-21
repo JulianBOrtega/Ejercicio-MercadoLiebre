@@ -25,6 +25,10 @@
     margin: 0;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 body
 {
     font-family: var(--f_general);

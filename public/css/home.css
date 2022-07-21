@@ -4,17 +4,63 @@
 }
 
 /*!     H E A D E R     */
+
 .home__header
 {
     background-color: var(--c_amarillo);
     font-size: var(--fs_body);
-    text-align: center;
     padding-bottom: 15px;
+}
+
+.home__header__top
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    gap: 0px;
+}
+
+.home__header__top a
+{
+    width: 50%;
+}
+
+.home__header__top a img
+{
+    width: 90%;
+}
+
+.home__header__top form
+{
+    display: flex;
+    border-radius: 5px;
+    height: 32px;
+    padding: 4px;
+    background-color: white;
+    width: 45%;
+    margin-right: 5px;
+}
+
+.home__header__top form input
+{
+    border: none;
+    width: 85%;
+}
+
+.home__header__top form button
+{
+    border: none;
+    background-color:white;
+    width: 15%;
+    cursor:pointer;
 }
 
 .home__header img
 {
-    width: 50%;
+    width: 45%;
     margin: 5px 0px;
 }
 
@@ -53,57 +99,32 @@
     font-size: 25px;
 }
 
+#banner
+{
+    width: 100%;
+}
+
 /*!     M A I N     */
+
 .home__main
 {
     background-color: var(--c_grisClaro);
     text-align: center;
-    padding-top: 10px;
     padding-bottom: 40px;
+}
+
+.home__main h3
+{
+    margin: 30px 0px;
+    font-size: var(--fs_title);
+    color: var(--c_grisOscuro);
 }
 
 .home__main__products
 {
-    
-}
-
-.home__main__products__infobox
-{
-    /*text-align: left; No me gusta como queda left-leaning :C */ 
-    border: solid 1px var(--c_grisClaro);
-    padding: 15px;
-}
-
-.home__main__products__infobox i
-{
-    color: var(--c_verde);
-    padding: 10px;
-    border: solid 1px var(--c_verde);
-    border-radius: 30px;
-    margin-bottom: 5px;
-}
-
-.home__main__products__infobox b
-{
-    display:none;
-}
-
-.home__main__products h3
-{
-    margin: 30px 0px;
-    font-size: var(--fs_title);
-}
-
-.home__main__products__price
-{
-    font-size: var(--fs_price);   
-}
-
-.home__main__products__discount
-{
-    font-size: var(--fs_discount);
-    color: var(--c_verde);
-    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .home__main__products article
@@ -112,6 +133,56 @@
     border-radius: 5px;
     margin: 10px 5%;
     /*padding: 20px;*/
+}
+
+.home__main__products__infobox
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    border-top: solid 1px var(--c_grisClaro);
+    padding: 15px 15px 5px;
+}
+
+.home__main__products__infobox .truck-container
+{
+    position: relative;
+    bottom: 9vw;
+    left: 70vw;
+    width: 0;
+    height: 0;
+}
+
+.home__main__products__infobox i
+{
+    background-color: white;
+    color: var(--c_verde);
+    border: solid 1px var(--c_verde);
+    border-radius: 100px;
+    padding: 2.9vw;
+    font-size: 4vw;
+    /*margin-bottom: 5px;*/
+}
+
+.home__main__products__price
+{
+    font-size: var(--fs_price);   
+    padding-right: 10px;
+    width: 30%;
+}
+
+.home__main__products__discount
+{
+    font-size: var(--fs_discount);
+    color: var(--c_verde);
+    margin-bottom: 15px;
+    padding-left: 5px;
+    width: 70%;
+}
+
+.home__main__products__name
+{
+    display:none;
 }
 
 /*!     F O O T E R     */
@@ -152,9 +223,53 @@
 
 @media (min-width: 426px)  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Tablet & desktop*/
 {
+    /*!     H E A D E R     */
+
     .home__header
     {
         padding-bottom: 0;
+    }
+
+    .home__header p
+    {
+        margin:0;
+    }
+
+    .home__header__top
+    {
+        padding-top: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0px 0px;
+    }
+
+    .home__header__top a
+    {
+        width: 20%;
+    }
+
+    .home__header__top form
+    {
+        margin: 0;
+        width: 50%;
+    }
+
+    .home__header__top form input
+    {
+        border: none;
+        width: 90%;
+    }
+
+    .home__header__top form button
+    {
+        border: none;
+        background-color:white;
+        width: 10%;
+    }
+
+    .home__header__top p
+    {
+        width: 22%;
     }
 
     .home__header__menu
@@ -181,19 +296,56 @@
         display: none;
     }
 
-    .home__main__products__infobox b
+    /*!     M A I N     */
+    .home__main h3
     {
-        display: inline;
+        text-align: left;
+        padding-left: 4%;
+    }
+
+    .home__main__products
+    {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .home__main__products article
     {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    .home__main__products__name
+    {
+        display: inline;
+        width: 100%;
+    }
+    
+    .home__main__products__infobox
+    {
+        padding: 15px 15px 25px;
+    }
+
+    .home__main__products__infobox .truck-container
+    {
+        bottom: 5vw;
+        left: 30vw;
+    }
+    
+    .home__main__products__infobox i
+    {
+        padding: 1.5vw;
+        font-size: 2vw;
     }
 }
 
 @media (min-width: 769px) /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop */
 {
+    /*!     H E A D E R     */
+    .home__header__top form
+    {
+        height: 48px;
+    }
     .home__header__menu ul li a
     {
         padding: 13px 20px;
@@ -203,5 +355,40 @@
     .home__header__menu ul li a:hover
     {
         background-color: #dfbd16;
+    }
+
+    /*!     M A I N     */
+
+    .home__main__products article
+    {
+        width: 20%;
+        margin: 10px 2%;
+    }
+
+    .home__main__products__infobox .truck-container
+    {
+        bottom: 2.7vw;
+        left: 14.5vw;
+    }
+
+    .home__main__products__infobox i
+    {
+        padding: 0.5vw;
+        font-size: 1.3vw;
+    }
+
+    /*!     F O O T E R     */
+
+    .home__footer
+    {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .home__footer div
+    {
+        width: 22%;
     }
 }
