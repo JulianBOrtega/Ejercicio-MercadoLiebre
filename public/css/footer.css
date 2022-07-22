@@ -1,0 +1,54 @@
+.footer
+{
+    text-align: center;
+    color: var(--c_grisOscuro);
+    padding-bottom: 20px;
+}
+
+.footer div
+{
+    margin: 40px;
+}
+
+.footer div i
+{
+    font-size: 26px;
+    color: var(--c_celeste);
+    margin-bottom: 10px;
+}
+
+.footer div h4
+{
+    font-size: var(--fs_description);
+}
+
+.footer div p
+{
+    font-size: var(--fs_body);
+}
+
+.footer p
+{
+    font-size: var(--fs_body);
+}
+
+@media (min-width: 426px)  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Tablet & desktop*/
+{
+
+}
+
+@media (min-width: 769px) /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop */
+{
+    .footer
+    {
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer div
+    {
+        width: 22%;
+    }
+}

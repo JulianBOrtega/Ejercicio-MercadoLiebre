@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/da8f9c3d94.js" crossorigin="anonymous"></script> <!-- Icons -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <title>Mercado liebre - Crea tu cuenta</title>
+</head>
+<body class="register">
+    <header-component></header-component>
+
+    <main class="register__main">
+        <h1>Crea tu cuenta</h1>
+        <form action="">
+            <input type="text" name="nombreApellido" placeholder="Nombre y apellido">
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
+            <input type="email" name="email" placeholder="Email">
+            <h4>Fecha de nacimiento</h4>
+            <input type="date" name="fechaNacimiento">
+            <input type="text" name="domicilio" placeholder="Domicilio">
+            <h4>Perfil de usuario</h4>
+            <label for="perfil">Comprador</label>
+            <input type="radio" name="perfil" value="0">
+            <label for="perfil">Vendedor</label>
+            <input type="radio" name="perfil" value="1">
+            <h4>Intereses</h4>
+            <input type="checkbox" name="interes" value="electro">
+            <label for="interes">Electro</label>
+            <input type="checkbox" name="interes" value="moda">
+            <label for="interes">Moda</label>
+            <input type="checkbox" name="interes" value="hogar">
+            <label for="interes">Hogar</label>
+            <input type="checkbox" name="interes" value="jugueteria">
+            <label for="interes">Jugueteria</label>
+            <input type="checkbox" name="interes" value="vidaSana">
+            <label for="interes">Vida sana</label>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer-component></footer-component>
+</body>
+</html>

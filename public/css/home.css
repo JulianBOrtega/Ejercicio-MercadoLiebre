@@ -3,108 +3,10 @@
 
 }
 
-/*!     H E A D E R     */
-
-.home__header
-{
-    background-color: var(--c_amarillo);
-    font-size: var(--fs_body);
-    padding-bottom: 15px;
-}
-
-.home__header__top
-{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content:center;
-    gap: 0px;
-}
-
-.home__header__top a
-{
-    width: 50%;
-}
-
-.home__header__top a img
-{
-    width: 90%;
-}
-
-.home__header__top form
-{
-    display: flex;
-    border-radius: 5px;
-    height: 32px;
-    padding: 4px;
-    background-color: white;
-    width: 45%;
-    margin-right: 5px;
-}
-
-.home__header__top form input
-{
-    border: none;
-    width: 85%;
-}
-
-.home__header__top form button
-{
-    border: none;
-    background-color:white;
-    width: 15%;
-    cursor:pointer;
-}
-
-.home__header img
-{
-    width: 45%;
-    margin: 5px 0px;
-}
-
-.home__header p
-{
-    margin: 10px 40px 10px;
-}
-
-.home__header__menu
-{
-    display:none;
-    padding-bottom: 5px;
-}
-
-.home__header__menu *
-{
-    margin-bottom: 5px;
-}
-
-#burger
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--c_celeste);
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
-
-#burger i
-{
-    color: white;
-    font-size: 25px;
-}
-
 #banner
 {
     width: 100%;
 }
-
-/*!     M A I N     */
 
 .home__main
 {
@@ -185,118 +87,8 @@
     display:none;
 }
 
-/*!     F O O T E R     */
-
-.home__footer
-{
-    text-align: center;
-    color: var(--c_grisOscuro);
-    padding-bottom: 20px;
-}
-
-.home__footer div
-{
-    margin: 40px;
-}
-
-.home__footer div i
-{
-    font-size: 26px;
-    color: var(--c_celeste);
-    margin-bottom: 10px;
-}
-
-.home__footer div h4
-{
-    font-size: var(--fs_description);
-}
-
-.home__footer div p
-{
-    font-size: var(--fs_body);
-}
-
-.home__footer p
-{
-    font-size: var(--fs_body);
-}
-
 @media (min-width: 426px)  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Tablet & desktop*/
 {
-    /*!     H E A D E R     */
-
-    .home__header
-    {
-        padding-bottom: 0;
-    }
-
-    .home__header p
-    {
-        margin:0;
-    }
-
-    .home__header__top
-    {
-        padding-top: 10px;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 0px 0px;
-    }
-
-    .home__header__top a
-    {
-        width: 20%;
-    }
-
-    .home__header__top form
-    {
-        margin: 0;
-        width: 50%;
-    }
-
-    .home__header__top form input
-    {
-        border: none;
-        width: 90%;
-    }
-
-    .home__header__top form button
-    {
-        border: none;
-        background-color:white;
-        width: 10%;
-    }
-
-    .home__header__top p
-    {
-        width: 22%;
-    }
-
-    .home__header__menu
-    {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 20px 0px;
-    }
-
-    .home__header__menu ul
-    {
-        display:flex;
-        flex-direction: row;
-    }
-
-    .home__header__menu ul li a
-    {
-        padding: 13px 10px;
-    }
-
-    #burger
-    {
-        display: none;
-    }
-
-    /*!     M A I N     */
     .home__main h3
     {
         text-align: left;
@@ -341,24 +133,6 @@
 
 @media (min-width: 769px) /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop */
 {
-    /*!     H E A D E R     */
-    .home__header__top form
-    {
-        height: 48px;
-    }
-    .home__header__menu ul li a
-    {
-        padding: 13px 20px;
-        font-size: 14px;
-    }
-
-    .home__header__menu ul li a:hover
-    {
-        background-color: #dfbd16;
-    }
-
-    /*!     M A I N     */
-
     .home__main__products article
     {
         width: 20%;
@@ -375,20 +149,5 @@
     {
         padding: 0.5vw;
         font-size: 1.3vw;
-    }
-
-    /*!     F O O T E R     */
-
-    .home__footer
-    {
-        display:flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .home__footer div
-    {
-        width: 22%;
     }
 }
