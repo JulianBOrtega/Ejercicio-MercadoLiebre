@@ -13,32 +13,67 @@
     <header-component></header-component>
 
     <main class="register__main">
-        <h1>Crea tu cuenta</h1>
-        <form action="">
-            <input type="text" name="nombreApellido" placeholder="Nombre y apellido">
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
-            <input type="email" name="email" placeholder="Email">
+        <form class="register__main__form" action="/">
+            <h1>Crea tu cuenta</h1>
+            <input type="text" name="nombreApellido" placeholder="Nombre y apellido" required minlength="3">
+            <p class="register__main__form--error">Nombre y apellido no puede contener números o símbolos.</p>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required minlength="3">
+            <p class="register__main__form--error">Nombre de usuario ocupado.</p>
+            <div class="register__main__form__password">
+                <input type="password" name="pass1" placeholder="Contraseña" minlength="5" required>
+                <input type="password" name="pass2" placeholder="Repetir contraseña" minlength="5" required>
+            </div>
+            <p class="register__main__form--error">Contraseña demasiado débil o no coinciden.</p>
+            <input type="email" name="email" placeholder="Email" minlength="3" required>
+            <p class="register__main__form--error">Dirección de email ya ocupada.</p>
+            <input type="file" name="pfp" id="pfp" hidden>
+            <label class="register__main__form__pfp" for="pfp">Sube una imágen de perfil</label>
+            <p class="register__main__form--error">Imágen de perfil pesa más de 5 MB.</p>
             <h4>Fecha de nacimiento</h4>
-            <input type="date" name="fechaNacimiento">
-            <input type="text" name="domicilio" placeholder="Domicilio">
+            <input type="date" name="fechaNacimiento" required>
+            <p class="register__main__form--error">No eres mayor de edad.</p>
+            <input type="text" name="domicilio" placeholder="Domicilio" required>
+            <p class="register__main__form--error">Ahora sé donde vives.</p>
+            
             <h4>Perfil de usuario</h4>
-            <label for="perfil">Comprador</label>
-            <input type="radio" name="perfil" value="0">
-            <label for="perfil">Vendedor</label>
-            <input type="radio" name="perfil" value="1">
+            <div class="register__main__form__radiolist">
+                <div class="register__main__form__choice">
+                    <input type="radio" name="perfil" value="0" id="comprador">
+                    <label for="comprador">Comprador</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="radio" name="perfil" value="1" id="vendedor">
+                    <label for="vendedor">Vendedor</label>
+                </div>
+                <p class="register__main__form--error">Debes seleccionar una opción.</p>
+            </div>
+            
             <h4>Intereses</h4>
-            <input type="checkbox" name="interes" value="electro">
-            <label for="interes">Electro</label>
-            <input type="checkbox" name="interes" value="moda">
-            <label for="interes">Moda</label>
-            <input type="checkbox" name="interes" value="hogar">
-            <label for="interes">Hogar</label>
-            <input type="checkbox" name="interes" value="jugueteria">
-            <label for="interes">Jugueteria</label>
-            <input type="checkbox" name="interes" value="vidaSana">
-            <label for="interes">Vida sana</label>
-            <br>
+            <div class="register__main__form__checklist">
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="electro" id="electro">
+                    <label for="electro">Electro</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="moda" id="moda">
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="hogar" id="hogar">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="jugueteria" id="jugueteria">
+                    <label for="jugueteria">Jugueteria</label>
+                </div>
+                <div class="register__main__form__choice">
+                    <input type="checkbox" name="interes" value="vidaSana" id="vidaSana">
+                    <label for="vidaSana">Vida sana</label>
+                </div>
+            </div>
+            
             <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
         </form>
     </main>
 

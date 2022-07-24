@@ -13,11 +13,12 @@
     <header-component></header-component>
 
     <main class="login__main">
-        <h1>Crea tu cuenta</h1>
-        <form action="">
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario">
-            <input type="password" name="contraseña" placeholder="Contraseña">
-            <br>
+        <form class="login__main__form" action="/">
+            <h1>Ingresa a tu cuenta</h1>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required>
+            <p class="register__main__form--error">No se encontró ninguna cuenta asociada con este nombre de usuario.</p>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <p class="register__main__form--error">Contraseña incorrecta.</p>
             <input type="submit" value="Enviar">
         </form>
     </main>

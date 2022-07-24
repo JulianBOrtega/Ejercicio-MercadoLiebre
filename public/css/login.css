@@ -1,0 +1,51 @@
+.login
+{
+
+}
+
+.login__main
+{
+    background-color: var(--c_grisClaro);
+}
+
+.login__main__form
+{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px;
+}
+
+.login__main__form input
+{
+    background-color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login__main__form input[type="submit"]
+{
+    background-color: var(--c_celeste);
+    color: white;
+    cursor: pointer;
+}
+
+.register__main__form--error
+{
+    color: red;
+    font-size: 12px;
+}
+
+@media (min-width: 426px)  /*! Tablet & desktop*/
+{
+
+}
+
+@media (min-width: 769px) /*! Desktop */
+{
+
+}
