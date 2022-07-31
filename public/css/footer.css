@@ -8,6 +8,7 @@
 .footer div
 {
     margin: 40px;
+    transition: all 0.2s ease;
 }
 
 .footer div i
@@ -15,6 +16,17 @@
     font-size: 26px;
     color: var(--c_celeste);
     margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.footer div:hover
+{
+    color: black;
+}
+
+.footer div:hover i
+{
+    color: black;
 }
 
 .footer div h4
