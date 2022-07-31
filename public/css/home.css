@@ -63,7 +63,11 @@
     border-radius: 100px;
     padding: 2.9vw;
     font-size: 4vw;
-    /*margin-bottom: 5px;*/
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
 }
 
 .home__main__products__price
@@ -85,6 +89,12 @@
 .home__main__products__name
 {
     display:none;
+    overflow: hidden;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
 }
 
 @media (min-width: 426px)  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Tablet & desktop*/
@@ -133,10 +143,39 @@
 
 @media (min-width: 769px) /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Desktop */
 {
+    .home__main__products
+    {
+        height: 250px;
+    }
+
     .home__main__products article
     {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 20%;
         margin: 10px 2%;
+        height: 220px;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -ms-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+
+    .home__main__products article:hover .home__main__products__name
+    {
+        height: 30px;
+    }
+
+    .home__main__products article:hover
+    {
+        height: 250px;
+    }
+
+    .home__main__products__name
+    {
+        display: inline;
+        height: 0;
+        width: 100%;
     }
 
     .home__main__products__infobox .truck-container
@@ -149,5 +188,10 @@
     {
         padding: 0.5vw;
         font-size: 1.3vw;
+    }
+
+    .truck-container:hover i
+    {
+        transform: rotate(-360deg);
     }
 }
