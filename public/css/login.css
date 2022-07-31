@@ -32,6 +32,12 @@
     background-color: var(--c_celeste);
     color: white;
     cursor: pointer;
+    transition:all 200ms ease;
+}
+
+.login__main__form input[type="submit"]:hover
+{
+    background-color: #0022AA;
 }
 
 .register__main__form--error
