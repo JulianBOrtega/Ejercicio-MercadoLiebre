@@ -28,6 +28,7 @@
     padding: 10px;
     text-align: center;
     background-color: var(--c_celeste);
+    transition:all 200ms ease;
 }
 
 .register__main__form input
@@ -43,6 +44,12 @@
     background-color: var(--c_celeste);
     color: white;
     cursor: pointer;
+    transition:all 200ms ease;
+}
+
+.register__main__form input[type="submit"]:hover, .register__main__form__pfp:hover
+{
+    background-color: #0022AA;
 }
 
 .register__main__form input[type="reset"]
@@ -77,12 +84,6 @@
 .register__main__form__checklist *
 {
     padding-bottom: 10px;
-}
-
-.register__main__form--error
-{
-    color: red;
-    font-size: 12px;
 }
 
 @media (min-width: 426px)  /*! Tablet & desktop*/

@@ -15,25 +15,18 @@
     <main class="register__main">
         <form class="register__main__form" action="/">
             <h1>Crea tu cuenta</h1>
-            <input type="text" name="nombreApellido" placeholder="Nombre y apellido" required minlength="3">
-            <p class="register__main__form--error">Nombre y apellido no puede contener números o símbolos.</p>
-            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required minlength="3">
-            <p class="register__main__form--error">Nombre de usuario ocupado.</p>
+            <input type="text" name="nombreApellido" placeholder="Nombre y apellido" minlength="3" maxlength="40" required>
+            <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" minlength="3" maxlength="40" required>
             <div class="register__main__form__password">
-                <input type="password" name="pass1" placeholder="Contraseña" minlength="5" required>
-                <input type="password" name="pass2" placeholder="Repetir contraseña" minlength="5" required>
+                <input type="password" name="pass1" placeholder="Contraseña" minlength="5" maxlength="20" required>
+                <input type="password" name="pass2" placeholder="Repetir contraseña" minlength="5" maxlength="20" required>
             </div>
-            <p class="register__main__form--error">Contraseña demasiado débil o no coinciden.</p>
-            <input type="email" name="email" placeholder="Email" minlength="3" required>
-            <p class="register__main__form--error">Dirección de email ya ocupada.</p>
-            <input type="file" name="pfp" id="pfp" hidden>
+            <input type="email" name="email" placeholder="Email" minlength="3" maxlength="40" required>
+            <input type="file" name="pfp" id="pfp" accept=".jpg, .png, .gif, .jpeg" hidden>
             <label class="register__main__form__pfp" for="pfp">Sube una imágen de perfil</label>
-            <p class="register__main__form--error">Imágen de perfil pesa más de 5 MB.</p>
             <h4>Fecha de nacimiento</h4>
             <input type="date" name="fechaNacimiento" required>
-            <p class="register__main__form--error">No eres mayor de edad.</p>
-            <input type="text" name="domicilio" placeholder="Domicilio" required>
-            <p class="register__main__form--error">Ahora sé donde vives.</p>
+            <input type="text" name="domicilio" placeholder="Domicilio" maxlength="60" required>
             
             <h4>Perfil de usuario</h4>
             <div class="register__main__form__radiolist">
@@ -45,7 +38,6 @@
                     <input type="radio" name="perfil" value="1" id="vendedor">
                     <label for="vendedor">Vendedor</label>
                 </div>
-                <p class="register__main__form--error">Debes seleccionar una opción.</p>
             </div>
             
             <h4>Intereses</h4>

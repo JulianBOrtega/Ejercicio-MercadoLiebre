@@ -40,12 +40,6 @@
     background-color: #0022AA;
 }
 
-.register__main__form--error
-{
-    color: red;
-    font-size: 12px;
-}
-
 @media (min-width: 426px)  /*! Tablet & desktop*/
 {
 
